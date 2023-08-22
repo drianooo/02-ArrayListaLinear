@@ -112,6 +112,7 @@ void buscarElemento()
 		cout << "A lista esta vazia. Nao ha elementos. \n";
 		return;
 	}
+	nElementosBuscar = 0;
 	for (int i = 0; i < nElementos; i++) {
 		if (lista[i]==busca) {
 			listaBuscar[nElementosBuscar] = i;
@@ -126,6 +127,7 @@ void buscarElemento()
 			for (int n = 0; n < nElementosBuscar; n++) {
 				cout << listaBuscar[n] << " ";
 			}
+			cout << endl;
 		}
 	}
 }
